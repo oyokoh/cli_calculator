@@ -1,4 +1,3 @@
-
 # CLI Calculator
 
 A simple command-line calculator built with Python.
@@ -10,31 +9,38 @@ A simple command-line calculator built with Python.
 - Multiplication
 - Division
 - Modulo (remainder)
-- Repeating menu until the user quits
 - Input validation
-- Division-by-zero protection
-- Unit tests
+- Division-by-zero and modulo-by-zero handling
 
 ## Requirements
 
-- Python 3.10 or later
-- No third-party packages required
+- Python 3
+- No external dependencies
 
-## Run the calculator
+## Run the Calculator
 
 ```bash
 python3 main.py
 ```
 
-## Run the tests
+## Run the Tests
 
 ```bash
 python3 -m unittest discover -s tests -v
 ```
 
-## Project structure
+## Project Structure
 
-- `main.py`: user interface and program flow
-- `calculator/operations.py`: arithmetic functions
-- `tests/test_operations.py`: calculation tests
-- `tests/test_cli.py`: command-line interaction tests
+```text
+cli_calculator/
+├── calculator/
+│   ├── __init__.py
+│   └── operations.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_cli.py
+│   └── test_operations.py
+├── main.py
+├── README.md
+└── .gitignore
+```
